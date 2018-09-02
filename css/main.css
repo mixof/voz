@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900");
+html {
+  font-size: 14pt;
+  color: #282828;
+  font-family: Raleway; }
+
+body {
+  background: url(../img/bodybg.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 20px; }
+
+.logo {
+  padding-top: 30px; }
+
+#questions-block h1 {
+  text-align: left;
+  color: #ae252e;
+  font-size: 30pt;
+  margin-bottom: 10px; }
+
+#questions-block p {
+  text-align: left;
+  font-weight: 300;
+  font-size: 11pt;
+  color: #282828; }
+
+#questions-block .title {
+  font-weight: 500;
+  font-size: 14pt; }
+
+.start_quiz {
+  text-align: right;
+  padding-top: 30px; }
+
+.start_quiz i {
+  background-image: url(../img/start.svg);
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px; }
+
+.start_quiz a {
+  text-decoration: none;
+  color: #ae252e;
+  font-size: 18px;
+  font-weight: 500; }
+
+.row-bordered:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #0000;
+  margin: 0 15px; }
