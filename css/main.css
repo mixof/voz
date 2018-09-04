@@ -63,5 +63,120 @@ body {
   background-image: url(../img/smart.png);
   margin-right: 10px; }
 
+.sv_opener {
+  height: 19px;
+  width: 17px;
+  display: inline-block;
+  vertical-align: bottom;
+  float: right !important;
+  background-image: url(../img/down-arrow.svg); }
+
+.voz_menu {
+  min-width: 250px;
+  width: 100%;
+  cursor: pointer; }
+
+.voz_border:after {
+  content: "";
+  border-bottom: 1px solid #000;
+  width: 100%;
+  height: 10px;
+  display: block; }
+
 #infos {
-  margin-top: 20px; }
+  margin-top: 50px;
+  font-size: 11pt;
+  font-weight: 300; }
+  #infos a {
+    text-decoration: none;
+    color: #000; }
+  #infos ul {
+    list-style: none;
+    padding-left: 25px;
+    padding-bottom: 20px; }
+    #infos ul li {
+      padding-top: 30px;
+      text-align: left; }
+      #infos ul li i {
+        margin-right: 20px; }
+
+i.check_icon {
+  height: 23px;
+  width: 24px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-image: url(../img/icons/res18.svg); }
+
+i.step_icon {
+  height: 23px;
+  width: 23px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-image: url(../img/icons/res19.svg); }
+
+i.copy_icon {
+  height: 23px;
+  width: 22px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-image: url(../img/icons/res20.svg); }
+
+i.doc_icon {
+  height: 23px;
+  width: 23px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-image: url(../img/icons/res21.svg); }
+
+i.info_icon {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 18px;
+  background-image: url(../img/icons/info.svg); }
+
+i.facebook {
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-image: url(../img/icons/facebook.png); }
+
+i.twitter {
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-image: url(../img/icons/twitter.png); }
+
+i.email {
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-image: url(../img/icons/email.png); }
+
+i.whatsapp {
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-image: url(../img/icons/whatsapp.png); }
+
+.info_link {
+  padding-top: 20px; }
+
+.social_list {
+  padding-top: 150px;
+  margin: 0 auto; }
+  .social_list li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px; }
+
+.opened {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+    transform--webkit-transform: rotate(180deg); }
