@@ -192,22 +192,37 @@ i.sv_close {
   transform: rotate(180deg);
     transform--webkit-transform: rotate(180deg); }
 
-#result_info {
+.party_info {
+  display: none; }
+
+.party_info.open {
+  display: inline-block; }
+
+.party_info, #result_info {
   font-size: 11pt;
   font-weight: 300;
   margin-top: 20px; }
-  #result_info .title {
+  .party_info .title, #result_info .title {
     color: #ae252e;
     font-size: 14pt;
     font-weight: 500; }
-  #result_info .info-block {
+  .party_info .info-block, #result_info .info-block {
     padding: 20px;
     background-color: #fff; }
+
+.page_info {
+  font-size: 11pt;
+  font-weight: 300;
+  margin-top: 20px; }
+  .page_info .title {
+    color: #ae252e;
+    font-size: 14pt;
+    font-weight: 500; }
 
 #parties_matches {
   padding-top: 30px; }
   #parties_matches ul {
-    padding-left: 20px;
+    padding: 0;
     width: 100%; }
     #parties_matches ul li {
       list-style: none;
@@ -215,7 +230,9 @@ i.sv_close {
       width: 100%;
       float: left;
       padding-top: 18px;
-      padding-right: 25px; }
+      padding-right: 25px;
+      padding-left: 25;
+      cursor: pointer; }
       #parties_matches ul li .party_logo {
         display: block;
         background-color: #797171;
@@ -235,22 +252,26 @@ i.sv_close {
           height: 24px;
           border-radius: 15px;
           background-color: #ae252e;
-          margin: 2px; }
+          margin: 2px;
+          position: relative; }
           #parties_matches ul li .partie_progress .progress .percent {
+            position: absolute;
             color: #fff;
-            padding: 10px;
+            padding: 4px;
+            right: 5px;
             font-size: 11pt;
-            font-weight: 500; }
+            font-weight: 500;
+            float: right !important; }
+          #parties_matches ul li .partie_progress .progress .partie_name {
+            color: #fff;
+            font-size: 8pt;
+            padding: 10px;
+            vertical-align: middle; }
           #parties_matches ul li .partie_progress .progress .unprogress {
             height: 100%;
             background-color: #c6676d;
-            width: 40%;
+            width: 20%;
             float: right;
             border-radius: 0 15px 15px 0;
             border-left: 1px solid #fff;
             text-align: right; }
-            #parties_matches ul li .partie_progress .progress .unprogress span {
-              color: #fff;
-              font-size: 8pt;
-              padding: 10px;
-              vertical-align: middle; }

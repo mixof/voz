@@ -79,7 +79,7 @@ body
 	width: 17px
 	display: inline-block
 	vertical-align: bottom
-	float: right!important;
+	float: right!important
 	background-image: url(../img/down-arrow.svg)	
 
 .voz_menu
@@ -207,10 +207,20 @@ i.sv_close
     -webkit-transform: rotate(180deg)
 
 
-#result_info
+
+.party_info
+      display:  none
+
+
+.party_info.open
+    display: inline-block    
+
+
+
+.party_info, #result_info    
 	font-size: 11pt
-	font-weight: 300
-	margin-top: 20px
+	font-weight: 300    
+	margin-top: 20px   
 
 	.title
 		color: $links_color
@@ -222,13 +232,28 @@ i.sv_close
 	.info-block
 		padding: 20px
 		background-color: #fff
+
+.page_info
+    font-size: 11pt
+    font-weight: 300    
+    margin-top: 20px
+
+    .title
+        color: $links_color
+        font-size: 14pt
+        font-weight: 500
+        
+       
+
+    .info-block
+                   
 	 	
 
 #parties_matches
         padding-top: 30px
 
         ul
-          padding-left: 20px
+          padding: 0
           width: 100%
 
           li
@@ -238,6 +263,8 @@ i.sv_close
             float: left
             padding-top: 18px
             padding-right: 25px
+            padding-left: 25
+            cursor: pointer
 
             .party_logo
                    display: block
@@ -262,28 +289,37 @@ i.sv_close
                         border-radius: 15px                       
                         background-color: $progress_color 
                         margin: 2px
+                        position: relative
 
                         .percent
-                            color: #fff
-                            padding: 10px
-                            font-size: 11pt
-                            font-weight: 500
+                           position: absolute
+                           color: #fff
+                           padding: 4px
+                           right: 5px
+                           font-size: 11pt
+                           font-weight: 500
+                           float: right!important
+
+                           
+                        .partie_name
+                           color: #fff
+                           font-size: 8pt
+                           padding: 10px
+                           vertical-align: middle    
+
 
                         .unprogress
                              height: 100%
                              background-color: $unprogress_color
-                             width: 40%
+                             width: 20%
                              float: right
                              border-radius: 0 15px 15px 0
                              border-left: 1px solid #fff
-                             text-align: right
-                            
+                             text-align: right                           
 
-                             span
-                                color: #fff
-                                font-size: 8pt
-                                padding: 10px
-                                vertical-align: middle
+                                                      
+
+                            
 
 
 
