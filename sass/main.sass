@@ -318,6 +318,128 @@ i.sv_close
                              text-align: right                           
 
                                                       
+#quiz-block
+    color: #fff
+    background-color: rgba(64, 64, 64, 0.77)
+    padding: 20px
+    margin-top: 10px
+
+    .question_title
+        font-size: 16pt
+
+    .question_text
+        font-size: 12pt
+
+    .info_buttons
+      text-align: center 
+
+    .info_buttons .skip_icon
+         height: 20px
+         width: 20px 
+         margin-right: 30px
+         display: inline-block
+         vertical-align: bottom  
+         cursor: pointer
+         -webkit-mask-image: url(../img/icons/skip.png)
+         mask-image: url(../img/icons/skip.png)     
+         background-color: #fff
+
+    .info_buttons .info_icn
+         height: 20px
+         width: 20px 
+         margin-left: 30px
+         display: inline-block
+         vertical-align: bottom  
+         cursor: pointer
+         -webkit-mask-image: url(../img/icons/info.svg)
+         mask-image: url(../img/icons/info.svg)     
+         background-color: #fff 
+         
+
+
+
+.questions_control
+    position: relative
+    padding-bottom: 30px
+    .question_numbers
+        text-align: center
+        .total_q
+          font-size: 10pt
+          color: #bbbaba
+          font-weight: 700
+    .questions_progress
+        display: inline-block
+        height: 2px
+        background-color: #9a9a9a
+        position: absolute
+        left: 30px
+        right: 30px
+        bottom: 16px
+        
+        .progress
+            background-color: #fff
+            width: 50%
+            height: 100%
+            position: absolute
+    .next_question
+        display: inline-block
+        right: 0
+        
+        position: absolute
+        i
+            height: 20px
+            width: 20px 
+            display: inline-block
+            vertical-align: bottom  
+            cursor: pointer
+            -webkit-mask-image: url(../img/icons/right-arrow.svg)
+            mask-image: url(../img/icons/right-arrow.svg)     
+            background-color: #fff
+
+    .prev_question
+        display: inline-block
+        position: absolute
+        left: 0
+        i
+            height: 20px
+            width: 20px 
+            display: inline-block
+            vertical-align: bottom  
+            cursor: pointer
+            -webkit-mask-image: url(../img/icons/right-arrow.svg)
+            mask-image: url(../img/icons/right-arrow.svg)     
+            background-color: #fff
+            transform: rotate(180deg)
+            -webkit-transform: rotate(180deg) 
+
+.answer_controls
+  text-align: center
+  margin: 0 auto
+  display: block
+  padding: 30px
+  a
+    display: block
+    font-size: 12pt
+    text-decoration: none
+    color: $main_text_color
+    padding: 10px
+    background-color: #fff
+    margin: 10px
+    min-width: 200px
+    border-radius: 20px
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: top all 0.3s;
+  a:hover
+    background-color: #3c3c3c
+    color: #fff   
+    
+
+
+
+        
+
 
                             
 
